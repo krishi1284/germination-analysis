@@ -403,7 +403,7 @@ with tab6:
         return f'background-color: {color}; color: white; font-weight: bold'
 
     st.dataframe(
-        metrics_df.style.map(color_r2, subset=['R²'])
+        metrics_df.style.map(color_r2, subset=['R²']),
         use_container_width=True
     )
 
